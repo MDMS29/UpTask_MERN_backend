@@ -50,7 +50,7 @@ app.use('/api/proyectos', proyectoRoutes/*ruta creada*/)
 app.use('/api/tareas', tareaRoutes/*ruta creada*/)
 
 app.get('/', (req, res) => {
-    console.log(PORT)
+    res.send(`Puerto ${PORT}`)
 })
 
 /*Si no existe un puerto creado abre el puerto 4000*/
